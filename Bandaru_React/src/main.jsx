@@ -3,10 +3,12 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import Home from './Assignment2/Home.jsx'
+import OnClick from './Event_Handling/OnClick.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
-    <Home />
+    {/* <Home /> */}
+    <OnClick />
   </StrictMode>,
 )
