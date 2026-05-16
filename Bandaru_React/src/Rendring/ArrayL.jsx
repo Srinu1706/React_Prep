@@ -3,29 +3,24 @@ import React from "react";
 const ArrayL = () => {
   // const names=['pushpa','Raka','Aaraya','Bunny']
 
-  const menuItems = [
+  const menuList = [
     { id: 1, name: "Vegetables", items: ["onion", "carrot", "Raw Banana"] },
     { id: 2, name: "fruits", items: ["Banana", "Orange", "Apple"] },
   ];
   return (
     <div>
-      {
-       menuItems.map((item)=>{
-        return(
+      {menuList.map((menu) => {
+        return (
           <>
-          <h1>{item.name}</h1>
+            <h1>{menu.name}</h1>
 
-          <>
-          {
-            item.items.map((item)=>{
-              return <><p>{item}</p></>
-            })
-          }
+            {menu.items.map((item) => {
+
+              return <h2>{item}</h2>;
+            })}
           </>
-          </>
-        )
-       })
-      }
+        );
+      })}
     </div>
   );
 };
