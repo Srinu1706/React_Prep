@@ -5,19 +5,19 @@ const Movies = () => {
   const nav = useNavigate();
 
   const handleNavigate = (mov) => {
-    nav("/MovieDetails", {
-      state: mov,
-    });
+    nav(`/MovieDetails/${mov.id}`);
   };
 
   const movie = [
     {
+      id:1,
       movieName: "The Odessey",
       Director: "Christofer Nolan",
       Industry: "HollyWood",
       Language: "English",
     },
     {
+      id:2,
       movieName: "The Shakti",
       Director: "Mehar Nolan",
       Industry: "TollyWood",
