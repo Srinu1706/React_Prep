@@ -1,0 +1,18 @@
+.container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+span {
+  font-size: 50px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.filled {
+  color: gold;
+}
+
+.empty {
+  color: gray;
+}

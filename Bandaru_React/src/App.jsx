@@ -1,32 +1,20 @@
-
-import './App.css'
-import React from 'react'
+import { Route, Routes, Link } from "react-router-dom";
+import "./App.css";
+import React from "react";
+import Demo1 from "./Routing/Demo1";
+import Demo2 from "./Routing/Demo2";
+import MovieDetails from "./Routing/MovieDetails";
+import Movies from "./Routing/Movies";
 
 function App() {
-
-const product = {
-  name: "Apple iPhone 13 Pro Max",
-  price: 1099,
-  Category: "Smartphones",
-
-}
-  // return (
-  //  <div id='product'>
-  //   <h1>{product.name}</h1>
-  //   <h2>Price: ${product.price}</h2>
-  //   <h3>Category: {product.Category}</h3>
-  //  </div>
-  // )
-
-  return React.createElement(
-    React.Fragment,
-    // "div",
-    null,
-    React.createElement("h1", null,product.name),
-    React.createElement("h2", null,`Price : ${product.price}`),
-    React.createElement("p", null,`Category: ${product.Category}`)
-    
-  )
+  return (
+    <div>
+      <Routes>
+      <Route path="/" element={<Movies></Movies>}></Route>
+      <Route path="MovieDetails" element={<MovieDetails></MovieDetails>}></Route>
+      </Routes>
+    </div>
+  );
 }
 
-export default App
+export default App;
